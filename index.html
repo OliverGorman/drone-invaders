@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Drone Invaders</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <main class="game-shell">
+    <section class="playfield">
+      <canvas id="game" width="960" height="640" aria-label="Space invaders style game"></canvas>
+      <header class="hud">
+        <div>
+          <span class="label">Score</span>
+          <strong id="score">0</strong>
+        </div>
+        <div>
+          <span class="label">Lives</span>
+          <strong id="lives">3</strong>
+          <span class="subvalue" id="livesDisplay">|||</span>
+        </div>
+        <div>
+          <span class="label">Round</span>
+          <strong id="round">1</strong>
+        </div>
+        <div>
+          <span class="label">Powerup</span>
+          <strong id="powerup">OFF</strong>
+          <span class="subvalue" id="powerupState">Standard Shot</span>
+        </div>
+      </header>
+      <div class="overlay" id="overlay">
+        <h1>Drone Invaders</h1>
+        <p>Move with arrow keys or A/D. Fire with space.</p>
+        <button id="startButton" type="button">Start Mission</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="./game.js"></script>
+</body>
+</html>
